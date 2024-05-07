@@ -1,9 +1,9 @@
 #!/bin/bash
 
-download_link="https://github.com/JulenRa-dev/DebsLang/raw/main/DebsLang_Linux.tar.gz"
+download_link="https://raw.githubusercontent.com/JulenRa-dev/DebsLang/main/DebsLang_Linux.tar.gz"
 echo "Downloading DebsLang..."
 
-curl $download_link > to_download.tar.gz
+curl $download_link --output - > to_download.tar.gz
 
 echo "Decompressing DebsLang..."
 
